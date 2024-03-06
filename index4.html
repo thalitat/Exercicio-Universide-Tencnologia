@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thalita Oliveira</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page">
+            <center>
+                Exercícios
+            </center>
+        </h1>
+        <p class="subtitle">
+          <p class="subtitle">
+            4) Usando JavaScript, solicite que seja informado a quantidade de nomes para inserir em uma lista.
+            Solicite os nomes conforme a quantidade informada (apenas o primeiro nome) em uma caixa prompt
+            acumulando em um Array e no final,
+            mostre:
+        </p>
+        <p class="center">
+            a) A quantidade de nomes digitados;
+        </p>
+        <p class="center">
+            b) Mostrar os nomes na ordem em que foram digitados;
+        </p>
+        <p class="center">
+            c) Mostrar os nomes na ordem alfabética;
+        </p>
+        <p class="center">
+            d) Mostrar os nomes em Maiúsculo;
+        </p>
+        <center>
+            <script>
+                var quantidade = parseInt(prompt("Digite a quantidade de nomes a inserir:"));
+                var nomes = [];
+
+                for (var i = 0; i < quantidade; i++) {
+                    var nome = prompt("Digite o " + (i + 1) + "º nome:");
+                    nomes.push(nome);
+                }
+
+                alert("Quantidade de nomes digitados: " + nomes.length);
+
+                
+                alert("Nomes na ordem em que foram digitados: " + nomes.join(", "));
+
+     
+                alert("Nomes na ordem alfabética: " + nomes.sort().join(", "));
+
+            
+                var nomesMaiusculo = nomes.map(function (nome) {
+                    return nome.toUpperCase();
+                });
+                alert("Nomes em Maiúsculo: " + nomesMaiusculo.join(", "));
+            </script>
+        </center>
+        <p class="center"> 
+            <footer>&copy; Copyright 2023 - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - TECNOLOGIAS PARA A
+                INTERNET II - Thalita Oliveira RU : 1142646</footer>
+        </p>
+    </div>
+</body>
+
+</html>
+

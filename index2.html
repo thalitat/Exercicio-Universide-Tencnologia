@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thalita Oliveira</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page">
+            <center>
+                Exercícios
+            </center>
+        </h1>
+        <p class="page">
+            2) Faça um script que solicite o número do mês em um prompt e mostre o nome do mês por extenso.
+            Ex: 01 - Janeiro.
+            Utilize Array.
+        </p>
+        <center>
+            <script>
+                var meses = [
+                    "Janeiro", "Fevereiro", "Março", "Abril",
+                    "Maio", "Junho", "Julho", "Agosto",
+                    "Setembro", "Outubro", "Novembro", "Dezembro"
+                ];
+
+                var numeroMes = prompt("Digite o número do mês (1 a 12):");
+
+        
+                if (numeroMes >= 1 && numeroMes <= 12) {
+                   
+                    var indice = numeroMes - 1;
+
+                
+                    alert("Você escolheu: " + numeroMes + " - " + meses[indice]);
+                } else {
+                    alert("Número de mês inválido. Digite um número entre 1 e 12.");
+                }
+            </script>
+        </center>
+        <p>
+            <footer>&copy; Copyright 2023 - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - TECNOLOGIAS PARA A INTERNET II - Thalita
+                Oliveira RU : 1142646</footer>
+        </p>
+    </div>
+</body>
+
+</html>
+
