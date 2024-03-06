@@ -6,3 +6,4 @@ Durante o projeto, foram implementados diversos elementos e funcionalidades util
 
 Participar deste trabalho foi uma oportunidade valiosa para aprimorar minhas habilidades de programação web e compreender melhor os conceitos fundamentais de desenvolvimento front-end.
 
+Feito 2022
